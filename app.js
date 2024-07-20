@@ -30,7 +30,7 @@ app.use("/public", express.static(path.join(__dirname, "/public")));
 app.use(
   cors({
     credentials: true,
-    origin: [],
+    origin: ["http://localhost:3000/"],
   })
 ); //enable cors
 app.use(cookieParser()); //allow to access cookie
